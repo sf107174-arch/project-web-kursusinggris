@@ -1,0 +1,27 @@
+:root{--ink:#17203a;--paper:#f7f6f2;--card:#fff;--blue:#2447f5;--mark:#ffd84a;--line:#e3e1d8;--mute:#667}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 system-ui,sans-serif}
+h1,h2,h3{font-family:Georgia,'Times New Roman',serif;line-height:1.2;margin:.2em 0 .5em}
+h1{font-size:clamp(2rem,5vw,3.2rem)}
+a{color:var(--blue)}
+.wrap{max-width:960px;margin:0 auto;padding:24px 20px 64px}
+nav{background:var(--ink);color:#fff}
+nav .wrap{display:flex;gap:16px;align-items:center;padding:12px 20px}
+nav a,nav button{color:#fff;text-decoration:none;background:none;border:0;font:inherit;cursor:pointer}
+nav .brand{font:700 1.2rem Georgia,serif;margin-right:auto}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px}
+.badge{display:inline-block;background:var(--mark);padding:1px 10px;border-radius:99px;font-size:.8rem;font-weight:600}
+.btn,button.btn{background:var(--blue);color:#fff;border:0;border-radius:8px;padding:8px 16px;font:inherit;cursor:pointer;text-decoration:none;display:inline-block}
+.btn.ghost{background:none;color:var(--blue);border:1px solid var(--blue)}
+.btn.red{background:#c62828}
+input,select,textarea{width:100%;padding:9px 11px;border:1px solid var(--line);border-radius:8px;font:inherit;margin:4px 0 12px;background:#fff}
+label{font-size:.9rem;font-weight:600}
+.bar{height:8px;background:var(--line);border-radius:9px;overflow:hidden}.bar i{display:block;height:100%;background:var(--blue)}
+.err{background:#fdecea;color:#8a1c1c;padding:8px 12px;border-radius:8px}
+.lesson{border-left:4px solid var(--line);padding-left:14px;margin:18px 0}.lesson.done{border-color:var(--blue)}
+pre{white-space:pre-wrap;font:inherit;margin:6px 0}
+table{width:100%;border-collapse:collapse}td,th{text-align:left;padding:8px;border-bottom:1px solid var(--line)}
+.row{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.stats{display:flex;gap:16px;flex-wrap:wrap}.stats .card{flex:1;min-width:140px}.stats b{font:700 2rem Georgia,serif}
+:focus-visible{outline:3px solid var(--mark);outline-offset:2px}
